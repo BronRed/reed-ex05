@@ -14,13 +14,18 @@ public class Solution05 {
         //Do calculations with int1 and int2 and print results
         String num1, num2;
         int int1, int2;
+        int soln1, soln2, soln3, soln4;
         System.out.print("What is the first number? ");
         num1 = scan.nextLine();
         System.out.print("What is the second number? ");
         num2 = scan.nextLine();
         int1 = Integer.parseInt(num1);
         int2 = Integer.parseInt(num2);
+        soln1 = int1+int2;
+        soln2 = int1-int2;
+        soln3 = int1*int2;
+        soln4 = int1/int2;
         System.out.print(String.format("%s + %s = %d\n%s - %s = %d\n%s * %s = %d\n%s / %s = %d",
-                num1, num2, (int1+int2), num1, num2, (int1-int2), num1, num2, (int1*int2), num1, num2, (int1/int2)));
+                num1, num2, soln1, num1, num2, soln2, num1, num2, soln3, num1, num2, soln4));
     }
 }
